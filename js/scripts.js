@@ -106,13 +106,13 @@ function showContact(contactId) {
   if (contact.address.work[0]){
     $("#work").html(contact.address.work)
   } else {
-    $(".work").remove();
+    $(".work").hide();
   };
 
   if (contact.address.home[0]){
     $("#home").html(contact.address.home)
   } else {
-    $(".home").remove();
+    $(".home").hide();
   };
 
   let buttons = $("#buttons");
