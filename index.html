@@ -11,11 +11,51 @@
 </head>
 <body>
   <div class="container">
-    <div class="card mx-auto">
-      <h6>Address Book</h6>
+    <h1>Address Book</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <hr>
+        <h2>Add a Contact:</h2>
+        <form id="new-contact">
+          <div class="form-group">
+            <label for="new-first-name">First Name</label>
+            <input type="text"  class="form-control" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last Name</label>
+            <input type="text"  class="form-control" id="new-last-name">
+          </div>
+          <div class="form-group">
+            <label for="new-phone-number">Phone Number</label>
+            <input type="text"  class="form-control" id="new-phone-number">
+          </div>
+          <div class="form-group">
+            <label for="new-work">Work Addresses (email and physical). Please enter a list separated by commas.</label>
+            <input type="text"  class="form-control" id="new-work">
+          </div>
+          <div class="form-group">
+            <label for="new-home">Home Addresses (email and physical). Please enter a list separated by commas.</label>
+            <input type="text"  class="form-control" id="new-home">
+          </div>
+          <button type="submit" class="btn-primary">Add</button>
+        </form>
+        <hr>
+        <h2>Contacts:</h2>
+        <ul id="contacts">
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="show-contact">
+          <p>First Name: <span class="first-name"></span></p>
+          <p>Last Name: <span class="last-name"></span></p>
+          <p>Phone Number: <span class="phone-number"></span></p>
+          <p class="work">Work Addresses: <span id="work"></span></p>
+          <p class="home">Home Addresses: <span id="home"></span></p>
+          <div id="buttons">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  
 </body>
 </html>
